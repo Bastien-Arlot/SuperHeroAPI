@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => options.AddPolicy(name: "SuperHeroOrigins",
     policy =>
     {
-        policy.WithOrigins("http://localhost:52967/").AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("http://localhost:52967").AllowAnyMethod().AllowAnyHeader();
     }));
 
 var app = builder.Build();
